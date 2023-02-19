@@ -1,10 +1,15 @@
 const Square = require("../lib/square");
-const square = new Square ()
-square.setColor ("red")
 describe ("square", () => {
     describe ("test property", () => {
+        const square = new Square (5, "red")
         test("test.color", () => {
-            expect (square.color).toEqual("red")
+            expect (square.getColor()).toEqual("red")
+        })
+        test("side of a square", () => {
+            expect(square.getSide()).toEqual(5)
+        })
+        test("test area of a square", () => {
+            expect(square.getArea()).toEqual(25)
         })
     })
 });

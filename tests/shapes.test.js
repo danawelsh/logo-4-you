@@ -12,4 +12,4 @@ describe ("shapes", () => {
             expect (shape.color).toEqual("red")
         })
     })
-})
+});
