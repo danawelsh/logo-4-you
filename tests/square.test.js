@@ -5,11 +5,8 @@ describe ("square", () => {
         test("test.color", () => {
             expect (square.getColor()).toEqual("red")
         })
-        test("side of a square", () => {
-            expect(square.getSide()).toEqual(5)
-        })
-        test("test area of a square", () => {
-            expect(square.getArea()).toEqual(25)
+        test("render", () => {
+            expect (square.render()).toEqual(`<rect x="30" y="30" width="30" height="30" fill="red" />`)
         })
     })
 });

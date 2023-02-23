@@ -5,14 +5,8 @@ describe ("triangle", () => {
         test("test.color", () => {
             expect (triangle.getColor()).toEqual("red")
         })
-        test("base of a triangle", () => {
-            expect(triangle.getBase()).toEqual(5)
-        })
-        test("height of a triangle", () => {
-            expect(triangle.getHeight()).toEqual(7)
-        })
-        test("test area of a triangle", () => {
-            expect(triangle.getArea()).toEqual(17.5)
+        test("render", () => {
+            expect (circle.render()).toEqual(`<polygon points="150, 18 244, 182 56, 182" fill="red" />`)
         })
     })
 });
